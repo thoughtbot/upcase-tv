@@ -1,15 +1,15 @@
 import UIKit
 import TVMLKit
 
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, TVApplicationControllerDelegate {
 
   var window: UIWindow?
   var appController: TVApplicationController?
 
-  static let TVBaseURL = "http://localhost:9001/"
-  static let TVBootURL = "\(AppDelegate.TVBaseURL)js/application.js"
-
+  static let TVBaseURL = "http://localhost:5000/"
+  static let TVBootURL = "\(TVBaseURL)apple_tv/apple_tv.js"
 
   func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
     window = UIWindow(frame: UIScreen.mainScreen().bounds)
