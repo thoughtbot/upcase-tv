@@ -9,7 +9,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, TVApplicationControllerDe
   var appController: TVApplicationController?
 
   static let TVBaseURL = "http://localhost:5000/"
-  static let TVBootURL = "\(TVBaseURL)apple_tv/apple_tv.js"
+  static let TVBootURL = "\(TVBaseURL)apple_tv/upcase.js"
 
   func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
     window = UIWindow(frame: UIScreen.mainScreen().bounds)
